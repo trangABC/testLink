@@ -1,0 +1,146 @@
+{
+  "genesis_time": "2018-11-21T16:27:23.633832+07:00",
+  "chain_id": "chain-cXtMAR",
+  "validators": [
+    {
+      "pub_key": {
+        "type": "F8CCEAEB5AE980",
+        "value": "A30xkezc5fgA84Sa88FfY0d0/RQjdr5yhEErvXFnPzmM"
+      },
+      "power": 1,
+      "name": "sharering-vn"
+    },
+    {
+      "pub_key": {
+        "type": "F8CCEAEB5AE980",
+        "value": "Ahs/+I+x+lsdGyE578fn4wVLLDPdG3lUwtbX0XDo2W0T"
+      },
+      "power": 1,
+      "name": "sharering-gcloud"
+    },
+    {
+      "pub_key": {
+        "type": "F8CCEAEB5AE980",
+        "value": "A0TV4U1XlpKrThau270wbLf0FItyK6sTAiUrwzkRDWmR"
+      },
+      "power": 1,
+      "name": "sharering-alibaba"
+    },
+    {
+      "pub_key": {
+        "type": "F8CCEAEB5AE980",
+        "value": "AjGMpxsFO023oLvJnV1+omg0HyCXvdEodU4dxE4ZGDMN"
+      },
+      "power": 1,
+      "name": "sharering-amazon"
+    }
+  ],
+  "app_hash": "",
+  "app_state": {
+    "accounts": null,
+    "stake": {
+      "pool": {
+        "loose_tokens": "0",
+        "bonded_tokens": "0",
+        "date_last_commission_reset": 0,
+        "prev_bonded_shares": "0"
+      },
+      "params": {
+        "goal_bonded": "0",
+        "unbonding_time": 259200000000000,
+        "max_validators": 10,
+        "bond_denom": "SHR"
+      },
+      "validators": [
+        {
+          "owner": "A98DFABE972C15E641AF556F21A6B61F4B8FBA68",
+          "pub_key": {
+            "type": "88B6D5D73C58D0",
+            "value": "BH0xkezc5fgA84Sa88FfY0d0/RQjdr5yhEErvXFnPzmM2A+QNRpWpaXRj/HBsVmiEOwyQguL67mRbIU4IHuGESM="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1",
+          "delegator_shares": "1",
+          "commission_rate": "0",
+          "description": {
+            "moniker": "sharering-vn",
+            "identity": "",
+            "website": "sharering.network",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "unbonding_height": 0,
+          "unbonding_time": 0
+        },
+        {
+          "owner": "851CE7FD787941060B1410BF95FEA4583743DC69",
+          "pub_key": {
+            "type": "88B6D5D73C58D0",
+            "value": "BBs/+I+x+lsdGyE578fn4wVLLDPdG3lUwtbX0XDo2W0TApyfyfwtIPNFB0f/QdaydISFX51Lnnn3Qs6I3LMbDIo="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1",
+          "delegator_shares": "1",
+          "commission_rate": "0",
+          "description": {
+            "moniker": "sharering-gcloud",
+            "identity": "",
+            "website": "sharering.network",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "unbonding_height": 0,
+          "unbonding_time": 0
+        },
+        {
+          "owner": "2CCC477DD19AF8A8433FCD4B74DB6BA3B572B4F6",
+          "pub_key": {
+            "type": "88B6D5D73C58D0",
+            "value": "BETV4U1XlpKrThau270wbLf0FItyK6sTAiUrwzkRDWmRayYYHvowhJkHTGzuaPK+etlshZecyU2FibOpu8GcEa8="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1",
+          "delegator_shares": "1",
+          "commission_rate": "0",
+          "description": {
+            "moniker": "sharering-alibaba",
+            "identity": "",
+            "website": "sharering.network",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "unbonding_height": 0,
+          "unbonding_time": 0
+        },
+        {
+          "owner": "C9492BF6B4FF5CD73BBF18B77B5A1FA288F0D928",
+          "pub_key": {
+            "type": "88B6D5D73C58D0",
+            "value": "BDGMpxsFO023oLvJnV1+omg0HyCXvdEodU4dxE4ZGDMNclQXDt6yCRXXdAktnCIGgw33rpDFKhllDwdxVFK7p9Y="
+          },
+          "revoked": false,
+          "status": 0,
+          "tokens": "1",
+          "delegator_shares": "1",
+          "commission_rate": "0",
+          "description": {
+            "moniker": "sharering-amazon",
+            "identity": "",
+            "website": "sharering.network",
+            "details": ""
+          },
+          "bond_height": 0,
+          "bond_intra_tx_counter": 0,
+          "unbonding_height": 0,
+          "unbonding_time": 0
+        }
+      ]
+    }
+  }
+}
