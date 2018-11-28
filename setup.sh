@@ -74,13 +74,9 @@ PEERS_FILE="peers.txt"
 DOWNLOAD_TOOL=""
 
 
+SCRIPT_NAME="$0"
 
-########### UTILITIES #################
-
-
-help () {
-    local OPTIND OPTARG
-    usage="$(basename "${FUNCNAME}") [-h] [-m moniker] [-w]
+usage="${SCRIPT_NAME} [-h] [-m moniker] [-w]
     
     Script to set up ShareLedger Masternode
 
@@ -88,12 +84,19 @@ where:
     -h  show this help text
     -m  Moniker name. Your Masternode unique name.
     -t  number of SHR tokens to be staked.
-    -c Configuration directory. (Optional. Default: ${CONFIGDIR})
-    -p P2P port. Port to open for other Masternode to listen to. (Optional. Default: 46656)
-    -r RPC port. Port for clients to connect to. ( Optional. Default: 46657 )
+    -c  Configuration directory. (Optional. Default: ${CONFIGDIR})
+    -p  P2P port. Port to open for other Masternode to listen to. (Optional. Default: 46656)
+    -r  RPC port. Port for clients to connect to. ( Optional. Default: 46657 )
     -w  Masternode website. (Optional. Default: \"sharering.network\")
     -d  Maternode details. (Optional. Default: \"ShareLedger Masternode\")
 "
+
+
+########### UTILITIES #################
+
+
+help () {
+    local OPTIND OPTARG
 
     while getopts 'hm:t:c:p:r:w:d:' option; do
       case "$option" in
@@ -254,6 +257,13 @@ run () {
     "${SHARELEDGER}" node
 }
 
+
+if [[ "$#" < 2  ]]; then
+    echo -e "Invalid number of arguments"
+    echo "$usage"
+    exit 1
+fi
+
 case "$1" in
     init)
         shift
@@ -264,5 +274,6 @@ case "$1" in
         ;;
     *)
         echo -e "Unknown command $1"
+        help
         ;;
 esac
