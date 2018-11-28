@@ -387,7 +387,7 @@ main () {
             ;;
         *)
             echo -e "Unknown command $1"
-            help
+            echo "$usage"
             ;;
     esac
 }
