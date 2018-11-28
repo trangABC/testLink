@@ -76,26 +76,41 @@ DOWNLOAD_TOOL=""
 
 SCRIPT_NAME="$0"
 
-usage="${SCRIPT_NAME} [-h] [-m moniker] [-w]
+usage="USAGE: ${SCRIPT_NAME} [-h]
     
-    Script to set up ShareLedger Masternode
+    Script to set up and run ShareLedger Masternode
 
-where:
-    -h  show this help text
-    -m  Moniker name. Your Masternode unique name.
-    -t  number of SHR tokens to be staked.
-    -c  Configuration directory. (Optional. Default: ${CONFIGDIR})
-    -p  P2P port. Port to open for other Masternode to listen to. (Optional. Default: 46656)
-    -r  RPC port. Port for clients to connect to. ( Optional. Default: 46657 )
-    -w  Masternode website. (Optional. Default: \"sharering.network\")
-    -d  Maternode details. (Optional. Default: \"ShareLedger Masternode\")
+1. To setup Masternode, run the following command:
+        ${SCRIPT_NAME} -m moniker -t tokens [-c dir] [-p p2p_port] [-r rpc_port] [-w website] [-d details]
+
+    where:
+        -h  show this help text
+        -m  Moniker name. Your Masternode unique name.
+        -t  number of SHR tokens to be staked.
+        -c  Configuration directory. (Optional. Default: ${CONFIGDIR})
+        -p  P2P port. Port to open for other Masternode to listen to. (Optional. Default: 46656)
+        -r  RPC port. Port for clients to connect to. ( Optional. Default: 46657 )
+        -w  Masternode website. (Optional. Default: \"sharering.network\")
+        -d  Maternode details. (Optional. Default: \"ShareLedger Masternode\")
+
+    Example:
+            ${SCRIPT_NAME} -m sharering -t 100
+
+2. To run Masternode, execute:
+        ${SCRIPT_NAME} run [-c dir]
+
+    where:
+        -h  show this help text
+        -c  Configuration directory. (Optional. Default: ${CONFIGDIR})
+
+    Please use the same configuration dir (-c) with the one in the setup phase if you specified different one.
 "
 
 
 ########### UTILITIES #################
 
 
-help () {
+init_args () {
     local OPTIND OPTARG
 
     while getopts 'hm:t:c:p:r:w:d:' option; do
@@ -124,11 +139,11 @@ help () {
         d) DETAILS=$OPTARG
             #echo "DETAILS: ${DETAILS}"
             ;;
-        :) printf "missing argument for -%s\n" "$OPTARG" >&2
+        :) printf "missing argument for -%s\n\n" "$OPTARG" >&2
            echo "$usage" >&2
            exit 1
            ;;
-       \?) printf "illegal option: -%s\n" "$OPTARG" >&2
+       \?) printf "illegal option: -%s\n\n" "$OPTARG" >&2
            echo "$usage" >&2
            exit 1
            ;;
@@ -139,9 +154,34 @@ help () {
 
     if [[ -z ${MONIKER} || ${TOKENS} == 0 ]]; then
         echo -e "-m (Moniker) and -t (tokens) are required"
+        echo
         echo "$usage" >&2
         exit 1
     fi
+}
+
+
+run_args () {
+    local OPTIND OPTARGS
+    while getopts 'hc:' option; do
+        case "$option" in
+            h) echo "$usage"
+               exit
+               ;;
+            c) CONFIGDIR=$OPTARG
+                ;;
+            :) printf "missing argument for -%s\n\n" "$OPTARG" >&2
+               echo "$usage" >&2
+               exit 1
+               ;;
+           \?) printf "illegal option: -%s\n\n" "$OPTARG" >&2
+               echo "$usage" >&2
+               exit 1
+               ;;
+        esac
+    done
+    shift $((OPTIND - 1))
+
 }
 
 prepare () {
@@ -208,7 +248,7 @@ download () {
 
 init () {
     # Read command line arguments
-    help "$@"
+    init_args "$@"
     
     echo "Initialize Masternode with:"
     printf "\tMasternode's moniker: ${MONIKER}\n"
@@ -254,26 +294,32 @@ init () {
 }
 
 run () {
+    run_args "$@"
     "${SHARELEDGER}" node
 }
 
+main () {
+    if [[ "$#" < 1  ]]; then
+        echo -e "Invalid number of arguments"
+        echo
+        echo "$usage"
+        exit 1
+    fi
 
-if [[ "$#" < 2  ]]; then
-    echo -e "Invalid number of arguments"
-    echo "$usage"
-    exit 1
-fi
+    case "$1" in
+        init)
+            shift
+            init "$@"
+            ;;
+        run)
+            shift
+            run "$@"
+            ;;
+        *)
+            echo -e "Unknown command $1"
+            help
+            ;;
+    esac
+}
 
-case "$1" in
-    init)
-        shift
-        init "$@"
-        ;;
-    run)
-        run
-        ;;
-    *)
-        echo -e "Unknown command $1"
-        help
-        ;;
-esac
+main "$@"
