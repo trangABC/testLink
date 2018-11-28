@@ -93,7 +93,7 @@ To setup & run your Masternode, please follow these steps:
         -c  Configuration directory. (Optional. Default: ${CONFIGDIR})
         -p  P2P port. Port to open for other Masternode to listen to. (Optional. Default: 46656)
         -r  RPC port. Port for clients to connect to. ( Optional. Default: 46657 )
-        
+
     Example:
             ${SCRIPT_NAME} -m sharering
 
@@ -117,8 +117,10 @@ To setup & run your Masternode, please follow these steps:
 
     where:
         -c  Configuration directory. (Optional. Default: ${CONFIGDIR})
-        
-NOTE:  Please use the same configuration dir (-c) with the one in the setup phase if you specified a different one.
+
+NOTE:
+    * Please use the same configuration dir (-c) with the one in the setup phase if you specified a different one.
+    * It takes time to synchronize your Masternode with our testnet. Watch a movie while your node is working hard.
 "
 
 
