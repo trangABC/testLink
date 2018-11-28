@@ -157,8 +157,8 @@ init_args () {
     shift $((OPTIND - 1))
 
 
-    if [[ -z ${MONIKER} || ${TOKENS} == 0 ]]; then
-        echo -e "-m (Moniker) and -t (tokens) are required"
+    if [[ -z ${MONIKER} ]]; then
+        echo -e "-m (Moniker) are required"
         echo
         echo "$usage" >&2
         exit 1
@@ -217,8 +217,8 @@ register_args () {
     shift $((OPTIND - 1))
 
 
-    if [[ -z ${MONIKER} || ${TOKENS} == 0 ]]; then
-        echo -e "-m (Moniker) and -t (tokens) are required"
+    if [[ ${TOKENS} == 0 ]]; then
+        echo -e "-t (tokens) are required and to be larger than 0"
         echo
         echo "$usage" >&2
         exit 1
