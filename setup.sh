@@ -315,6 +315,16 @@ main () {
             shift
             run "$@"
             ;;
+        address)
+            shift
+            if [[ ! -f ${SHARELEDGER} ]]; then
+                echo -e "Executable *shareledger* not found."
+                echo -e "Please init first."
+                echo "$usage"
+            else 
+                "${SHARELEDGER}" show_priv_key
+            fi
+            ;;
         *)
             echo -e "Unknown command $1"
             help
