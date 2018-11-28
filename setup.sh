@@ -86,7 +86,7 @@ usage="USAGE: ${SCRIPT_NAME} [-h]
 To setup & run your Masternode, please follow these steps:
 
 1. Generate an account and essential configuration files
-        ${SCRIPT_NAME} -m moniker -t tokens [-c dir] [-p p2p_port] [-r rpc_port] [-w website] [-d details]
+        ${SCRIPT_NAME} -m moniker [-c dir] [-p p2p_port] [-r rpc_port] [-w website] [-d details]
 
     where:
         -m  Moniker name. Your Masternode unique name. REQUIRED
