@@ -354,7 +354,7 @@ show_address () {
         echo -e "Please init first."
         echo "$usage"
     else
-        "${SHARELEDGER}" show_priv_key
+        "${SHARELEDGER}" show_address
     fi
 }
 
