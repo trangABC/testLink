@@ -110,7 +110,7 @@ To setup & run your Masternode, please follow these steps:
         -d  Maternode details. (Optional. Default: \"ShareLedger Masternode\")
 
     Example:
-        ${SCRIPT_NAME} -t 10
+        ${SCRIPT_NAME} register -t 10
 
 4. To run the Masternode, execute:
         ${SCRIPT_NAME} run [-c dir]
@@ -294,12 +294,9 @@ init () {
     
     echo "Initialize Masternode with:"
     printf "\tMasternode's moniker: ${MONIKER}\n"
-    printf "\tTokens to be staked : ${TOKENS}\n"
     printf "\tConfiguration dir   : ${CONFIGDIR}\n"
     printf "\tRPC port            : ${RPC_PORT}\n"
     printf "\tP2P port            : ${P2P_PORT}\n"
-    printf "\tWebsite             : ${WEBSITE}\n"
-    printf "\tDetails             : ${DETAILS}\n"
     printf "\n\n"
 
 
@@ -340,6 +337,13 @@ run () {
 
 register () {
     register_args "$@"
+
+    printf "Register this masternode with:\n"
+    printf "\tConfiguration dir   : ${CONFIGDIR}\n"
+    printf "\tTokens to be staked : ${TOKENS}\n"
+    printf "\tWebsite             : ${WEBSITE}\n"
+    printf "\Details              : ${DETAILS}\n"
+
     # register Masternode
     "${SHARELEDGER}" register_masternode --home "${CONFIGDIR}"  --tokens "${TOKENS}" --website "${WEBSITE}" --details "${DETAILS}"
 }
