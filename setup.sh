@@ -342,7 +342,7 @@ register () {
     printf "\tConfiguration dir   : ${CONFIGDIR}\n"
     printf "\tTokens to be staked : ${TOKENS}\n"
     printf "\tWebsite             : ${WEBSITE}\n"
-    printf "\Details              : ${DETAILS}\n"
+    printf "\tDDetails              : ${DETAILS}\n"
 
     # register Masternode
     "${SHARELEDGER}" register_masternode --home "${CONFIGDIR}"  --tokens "${TOKENS}" --website "${WEBSITE}" --details "${DETAILS}"
