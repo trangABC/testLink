@@ -1,11 +1,11 @@
 {
-  "genesis_time": "2018-11-21T16:27:23.633832+07:00",
-  "chain_id": "chain-cXtMAA",
+  "genesis_time": "2018-12-08T19:38:03.914451+07:00",
+  "chain_id": "chain-37Vp7C",
   "validators": [
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "A30xkezc5fgA84Sa88FfY0d0/RQjdr5yhEErvXFnPzmM"
+        "value": "AkWSrkC4kWXPUI7st71ggVeJUvTJkiOYbmQa+J2nudBL"
       },
       "power": 1,
       "name": "sharering-vn"
@@ -13,7 +13,7 @@
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "Ahs/+I+x+lsdGyE578fn4wVLLDPdG3lUwtbX0XDo2W0T"
+        "value": "AhwskSYueTw0Yr5Pv/KfjzPCe/S7OoenzQEcg3YVEU47"
       },
       "power": 1,
       "name": "sharering-gcloud"
@@ -21,7 +21,7 @@
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "A0TV4U1XlpKrThau270wbLf0FItyK6sTAiUrwzkRDWmR"
+        "value": "AvLYKCn6JW51qLk/zKnKG9GdiR6c/COUqe53S3av9Ymn"
       },
       "power": 1,
       "name": "sharering-alibaba"
@@ -29,10 +29,10 @@
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "AjGMpxsFO023oLvJnV1+omg0HyCXvdEodU4dxE4ZGDMN"
+        "value": "Ajv5THHyYF0ft2ni8niGLid6Y+c+uX/N9zNBjh9e7pr7"
       },
       "power": 1,
-      "name": "sharering-amazon"
+      "name": "sharering-amazon-dev"
     }
   ],
   "app_hash": "",
@@ -40,7 +40,7 @@
     "accounts": null,
     "stake": {
       "pool": {
-        "loose_tokens": "0",
+        "loose_tokens": "3000000000",
         "bonded_tokens": "0",
         "date_last_commission_reset": 0,
         "prev_bonded_shares": "0"
@@ -53,10 +53,10 @@
       },
       "validators": [
         {
-          "owner": "A98DFABE972C15E641AF556F21A6B61F4B8FBA68",
+          "owner": "5C5CF5621A4BC2BA730FED1CE8687CC7C919E1FB",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BH0xkezc5fgA84Sa88FfY0d0/RQjdr5yhEErvXFnPzmM2A+QNRpWpaXRj/HBsVmiEOwyQguL67mRbIU4IHuGESM="
+            "value": "BEWSrkC4kWXPUI7st71ggVeJUvTJkiOYbmQa+J2nudBLoJBrwvUvPrGrxeMhlMcJEKll177JjsLVHhRWZlFF5/w="
           },
           "revoked": false,
           "status": 0,
@@ -75,10 +75,10 @@
           "unbonding_time": 0
         },
         {
-          "owner": "851CE7FD787941060B1410BF95FEA4583743DC69",
+          "owner": "1F04B68F0F5D365F1D378AC04AF07ED578758129",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BBs/+I+x+lsdGyE578fn4wVLLDPdG3lUwtbX0XDo2W0TApyfyfwtIPNFB0f/QdaydISFX51Lnnn3Qs6I3LMbDIo="
+            "value": "BBwskSYueTw0Yr5Pv/KfjzPCe/S7OoenzQEcg3YVEU47l4TmxNR4nDgT3VDEqhZqRSgARi9GGST4MGh7JhCjoiw="
           },
           "revoked": false,
           "status": 0,
@@ -97,10 +97,10 @@
           "unbonding_time": 0
         },
         {
-          "owner": "2CCC477DD19AF8A8433FCD4B74DB6BA3B572B4F6",
+          "owner": "D15F5B5514B0239BDC21B53846BAE3579F080754",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BETV4U1XlpKrThau270wbLf0FItyK6sTAiUrwzkRDWmRayYYHvowhJkHTGzuaPK+etlshZecyU2FibOpu8GcEa8="
+            "value": "BPLYKCn6JW51qLk/zKnKG9GdiR6c/COUqe53S3av9YmniBcq63bakaYHNodgZvVWVCh9CgVF/mBXH8MHl+iH2pQ="
           },
           "revoked": false,
           "status": 0,
@@ -119,10 +119,10 @@
           "unbonding_time": 0
         },
         {
-          "owner": "C9492BF6B4FF5CD73BBF18B77B5A1FA288F0D928",
+          "owner": "FA3F48BE8E8DE2EB6BBB43BAC3A1CE2F9FA7517D",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BDGMpxsFO023oLvJnV1+omg0HyCXvdEodU4dxE4ZGDMNclQXDt6yCRXXdAktnCIGgw33rpDFKhllDwdxVFK7p9Y="
+            "value": "BDv5THHyYF0ft2ni8niGLid6Y+c+uX/N9zNBjh9e7pr76/8wEubuJdxC1xbPXzwqn/g6ORWgG9TFnWbU8WeyK3Q="
           },
           "revoked": false,
           "status": 0,
@@ -130,7 +130,7 @@
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
-            "moniker": "sharering-amazon",
+            "moniker": "sharering-amazon-dev",
             "identity": "",
             "website": "sharering.network",
             "details": ""
@@ -140,7 +140,8 @@
           "unbonding_height": 0,
           "unbonding_time": 0
         }
-      ]
+      ],
+      "bonds": null
     }
   }
 }
