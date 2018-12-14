@@ -1,38 +1,38 @@
 {
-  "genesis_time": "2018-12-08T19:38:03.914451+07:00",
-  "chain_id": "chain-37Vp7C",
+  "genesis_time": "2018-12-12T14:13:21.21269+07:00",
+  "chain_id": "chain-NqOeh4",
   "validators": [
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "AkWSrkC4kWXPUI7st71ggVeJUvTJkiOYbmQa+J2nudBL"
+        "value": "AhcIwwg1FkMf9mzD9yxD/s6ocMhpBYIJZCU/1Dx2qZPK"
       },
       "power": 1,
-      "name": "sharering-vn"
+      "name": "node0"
     },
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "AhwskSYueTw0Yr5Pv/KfjzPCe/S7OoenzQEcg3YVEU47"
+        "value": "A5REM21srEyfVDi8R0HTjVShOKsX3iqaA/w5TChcFnNR"
       },
       "power": 1,
-      "name": "sharering-gcloud"
+      "name": "node1"
     },
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "AvLYKCn6JW51qLk/zKnKG9GdiR6c/COUqe53S3av9Ymn"
+        "value": "AruJTbBek7kxHKQcj7Bi932Qjx6mGFBiR44PxVsWCyhF"
       },
       "power": 1,
-      "name": "sharering-alibaba"
+      "name": "node2"
     },
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "Ajv5THHyYF0ft2ni8niGLid6Y+c+uX/N9zNBjh9e7pr7"
+        "value": "AluUa5dyny0azWS4MpZcTOl1ZutCKAmjYCGhRMXJjN/W"
       },
       "power": 1,
-      "name": "sharering-amazon-dev"
+      "name": "node3"
     }
   ],
   "app_hash": "",
@@ -53,18 +53,18 @@
       },
       "validators": [
         {
-          "owner": "5C5CF5621A4BC2BA730FED1CE8687CC7C919E1FB",
+          "owner": "F1E708F54B1F85E9C7A1E424B5CDDB0E79270B10",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BEWSrkC4kWXPUI7st71ggVeJUvTJkiOYbmQa+J2nudBLoJBrwvUvPrGrxeMhlMcJEKll177JjsLVHhRWZlFF5/w="
+            "value": "BBcIwwg1FkMf9mzD9yxD/s6ocMhpBYIJZCU/1Dx2qZPKHr9TV+OTZzdBUFoatQW5DHdafEOyK4n8B9RUngt+NPw="
           },
           "revoked": false,
-          "status": 0,
-          "tokens": "1",
+          "status": 2,
+          "tokens": "2000000",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
-            "moniker": "sharering-vn",
+            "moniker": "node0",
             "identity": "",
             "website": "sharering.network",
             "details": ""
@@ -75,18 +75,18 @@
           "unbonding_time": 0
         },
         {
-          "owner": "1F04B68F0F5D365F1D378AC04AF07ED578758129",
+          "owner": "843059AA479CD8DEDFB52E7BC9982F546DBB6FB7",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BBwskSYueTw0Yr5Pv/KfjzPCe/S7OoenzQEcg3YVEU47l4TmxNR4nDgT3VDEqhZqRSgARi9GGST4MGh7JhCjoiw="
+            "value": "BJREM21srEyfVDi8R0HTjVShOKsX3iqaA/w5TChcFnNRl39rIYvjd2frkbFAdgsZ4at20yfuIO0CkD1NlVS3VB8="
           },
           "revoked": false,
-          "status": 0,
-          "tokens": "1",
+          "status": 2,
+          "tokens": "2000000",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
-            "moniker": "sharering-gcloud",
+            "moniker": "node1",
             "identity": "",
             "website": "sharering.network",
             "details": ""
@@ -97,18 +97,18 @@
           "unbonding_time": 0
         },
         {
-          "owner": "D15F5B5514B0239BDC21B53846BAE3579F080754",
+          "owner": "EEDA18046DAFEC3279E6194673D338611F3E79CD",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BPLYKCn6JW51qLk/zKnKG9GdiR6c/COUqe53S3av9YmniBcq63bakaYHNodgZvVWVCh9CgVF/mBXH8MHl+iH2pQ="
+            "value": "BLuJTbBek7kxHKQcj7Bi932Qjx6mGFBiR44PxVsWCyhF+g5BquPinYv9MaSNvEHyTB3JDYjf7ou8D/++mikggeI="
           },
           "revoked": false,
-          "status": 0,
-          "tokens": "1",
+          "status": 2,
+          "tokens": "2000000",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
-            "moniker": "sharering-alibaba",
+            "moniker": "node2",
             "identity": "",
             "website": "sharering.network",
             "details": ""
@@ -119,18 +119,18 @@
           "unbonding_time": 0
         },
         {
-          "owner": "FA3F48BE8E8DE2EB6BBB43BAC3A1CE2F9FA7517D",
+          "owner": "C36F0AA07D51F162F74F752263A3AB1A1A380C1E",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BDv5THHyYF0ft2ni8niGLid6Y+c+uX/N9zNBjh9e7pr76/8wEubuJdxC1xbPXzwqn/g6ORWgG9TFnWbU8WeyK3Q="
+            "value": "BFuUa5dyny0azWS4MpZcTOl1ZutCKAmjYCGhRMXJjN/W9Fzp0pZNiTAXL1MG0ur4arkBiOP159XPf9tr7xXu/MI="
           },
           "revoked": false,
-          "status": 0,
-          "tokens": "1",
+          "status": 2,
+          "tokens": "2000000",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
-            "moniker": "sharering-amazon-dev",
+            "moniker": "node3",
             "identity": "",
             "website": "sharering.network",
             "details": ""
