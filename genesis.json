@@ -1,11 +1,11 @@
 {
-  "genesis_time": "2018-12-12T14:13:21.21269+07:00",
-  "chain_id": "chain-NqOeh4",
+  "genesis_time": "2018-12-05T16:00:11.32110421+08:00",
+  "chain_id": "chain-Ul6LRI",
   "validators": [
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "AhcIwwg1FkMf9mzD9yxD/s6ocMhpBYIJZCU/1Dx2qZPK"
+        "value": "AsZGPqT+6NiBA+nHJDhiofUtpSPPMwXACeyWtOSFcT/r"
       },
       "power": 1,
       "name": "node0"
@@ -13,7 +13,7 @@
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "A5REM21srEyfVDi8R0HTjVShOKsX3iqaA/w5TChcFnNR"
+        "value": "A1CSNcb0IuUjpUFvjZ4xyr/YMqSIukPmtSHRrTzG6MZb"
       },
       "power": 1,
       "name": "node1"
@@ -21,7 +21,7 @@
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "AruJTbBek7kxHKQcj7Bi932Qjx6mGFBiR44PxVsWCyhF"
+        "value": "A8r7t8vaKskc7c5aC5tA+jbke35h3ephpGp48NObj88B"
       },
       "power": 1,
       "name": "node2"
@@ -29,7 +29,7 @@
     {
       "pub_key": {
         "type": "F8CCEAEB5AE980",
-        "value": "AluUa5dyny0azWS4MpZcTOl1ZutCKAmjYCGhRMXJjN/W"
+        "value": "A62x0tJawy4krlZD7KRFtG97RMzD6lssKesrgk4/1WOm"
       },
       "power": 1,
       "name": "node3"
@@ -53,14 +53,14 @@
       },
       "validators": [
         {
-          "owner": "F1E708F54B1F85E9C7A1E424B5CDDB0E79270B10",
+          "owner": "5EAECB34C3EACB46C3AB5812DC31D90BAEE5BCFA",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BBcIwwg1FkMf9mzD9yxD/s6ocMhpBYIJZCU/1Dx2qZPKHr9TV+OTZzdBUFoatQW5DHdafEOyK4n8B9RUngt+NPw="
+            "value": "BMZGPqT+6NiBA+nHJDhiofUtpSPPMwXACeyWtOSFcT/rO1QSV35B0BgbhrIqsQ2Er1JwpA1BWQAvjoq8C0ewZjw="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "2000000",
+          "status": 0,
+          "tokens": "1",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
@@ -75,14 +75,14 @@
           "unbonding_time": 0
         },
         {
-          "owner": "843059AA479CD8DEDFB52E7BC9982F546DBB6FB7",
+          "owner": "EB4265A5DD0DDB00EFCC11A1829D2D535248C4DB",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BJREM21srEyfVDi8R0HTjVShOKsX3iqaA/w5TChcFnNRl39rIYvjd2frkbFAdgsZ4at20yfuIO0CkD1NlVS3VB8="
+            "value": "BFCSNcb0IuUjpUFvjZ4xyr/YMqSIukPmtSHRrTzG6MZbBgSwOq8iTklQfVWtvnuXNFKqyXKAYO4LM/zSWSc0u7s="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "2000000",
+          "status": 0,
+          "tokens": "1",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
@@ -97,14 +97,14 @@
           "unbonding_time": 0
         },
         {
-          "owner": "EEDA18046DAFEC3279E6194673D338611F3E79CD",
+          "owner": "71B5E390C1C3839EFD421214562BA29CEAFD396A",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BLuJTbBek7kxHKQcj7Bi932Qjx6mGFBiR44PxVsWCyhF+g5BquPinYv9MaSNvEHyTB3JDYjf7ou8D/++mikggeI="
+            "value": "BMr7t8vaKskc7c5aC5tA+jbke35h3ephpGp48NObj88B0C4Sc1NLRnmXM680hlOmex/+qHArG27npWg47zUTkb8="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "2000000",
+          "status": 0,
+          "tokens": "1",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
@@ -119,14 +119,14 @@
           "unbonding_time": 0
         },
         {
-          "owner": "C36F0AA07D51F162F74F752263A3AB1A1A380C1E",
+          "owner": "3486D468C9B5F411934D865FADAFCCD071BE645C",
           "pub_key": {
             "type": "88B6D5D73C58D0",
-            "value": "BFuUa5dyny0azWS4MpZcTOl1ZutCKAmjYCGhRMXJjN/W9Fzp0pZNiTAXL1MG0ur4arkBiOP159XPf9tr7xXu/MI="
+            "value": "BK2x0tJawy4krlZD7KRFtG97RMzD6lssKesrgk4/1WOmI7COS5I4+jJh3tUl0awKSFEduyOm33818U3Yp5fFEp0="
           },
           "revoked": false,
-          "status": 2,
-          "tokens": "2000000",
+          "status": 0,
+          "tokens": "1",
           "delegator_shares": "1",
           "commission_rate": "0",
           "description": {
